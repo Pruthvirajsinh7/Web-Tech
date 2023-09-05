@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+</head>
+<body>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+    <form> 
+    <fieldset>
+        <legend> Student Information </legend>
+        <label for="rollNo">Roll No:</label>
+        <input type="text" id="rollNo" name="rollNo"><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name here"><br><br>
+
+        <label for="parentsName">Parent's Name:</label>
+        <input type="text" id="parentsName" name="parentsName"><br><br>
+
+        <label> Date of birth: <input type="Date" name="dofb" ></label><br><br>
+
+        <label for="image">Your Image:</label>
+        <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester">
+            <option value="1">1st Semester</option>
+            <option value="2">2nd Semester</option>
+            <option value="3">3rd Semester</option>
+            <option value="4">4th Semester</option>
+            <option value="5">5th Semester</option>
+            <option value="6">6th Semester</option>
+            <option value="7">7th Semester</option>
+            <option value="8">8th Semester</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your Name here"></textarea><br><br>
+
+        <label for="age">Age:</label>
+        20
+        <input type="range" id="age" name="age" min="20" max="65">
+        65
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    </fieldset> 
+    </form>
+</body>
+</html>
