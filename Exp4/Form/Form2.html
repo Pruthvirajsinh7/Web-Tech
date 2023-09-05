@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+</head>
+<body>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+    <form> 
+    <fieldset>
+        <legend> Customer Registration </legend>
+        <label for="rollNo">Customer Id:</label>
+        <input type="text" id="rollNo" name="rollNo"><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name here" max="60"><br><br>
+
+        <label for="parentsName">Parent's Name:</label>
+        <input type="text" id="parentsName" name="parentsName"><br><br>
+
+        <label> Date of birth: <input type="Date" name="dofb" ></label><br><br>
+
+        <label for="image">Your Image:</label>
+        <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester">
+            <option value="1">1st Semester</option>
+            <option value="2">2nd Semester</option>
+            <option value="3">3rd Semester</option>
+            <option value="4">4th Semester</option>
+            <option value="5">5th Semester</option>
+            <option value="6">6th Semester</option>
+            <option value="7">7th Semester</option>
+            <option value="8">8th Semester</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your Name here"></textarea><br><br>
+
+        <label for="customerAccountType">Customer Account type:</label><br>
+            <input type="checkbox" id="chess" name="customerAccountType" value="chess">
+            <label for="chess">Basic </label><br>
+            <input type="checkbox" id="cricket" name="customerAccountType" value="cricket">
+            <label for="cricket">Privileged</label><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+
+
+        <label for="age">Age:</label>
+        18
+        <input type="range" id="age" name="age" min="18" max="80">
+        80
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your Password" required><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    </fieldset> 
+    </form>
+</body>
+</html>
