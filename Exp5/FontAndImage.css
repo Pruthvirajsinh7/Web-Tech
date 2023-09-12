@@ -1,0 +1,71 @@
+
+#img1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 180px;
+    z-index: 1;
+}
+
+#grad {
+    background: linear
+    
+    gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 60px;
+    color: #ff0000;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    color: #0000ff;
+    text-align: left;
+}
+
+p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    color: #080303;
+    text-align: justify;
+}
+
+
+#img2 {
+    border: 3px solid #000000;
+    float: left;
+}
+
+#img3 {
+    border: 3px solid #000000;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background2.png');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.6;
+}
