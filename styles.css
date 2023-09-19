@@ -1,0 +1,22 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid #2980b9; /* Border style, width, and color */
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+}
