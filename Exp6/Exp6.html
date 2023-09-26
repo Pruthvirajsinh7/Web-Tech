@@ -3,12 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <title>Radius and Border Properties</title>
+    <title>Styled Tables</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="box">
-        Rounded Box with Border
-    </div>
+    <!-- Dotted Border Table -->
+    <table class="custom-table dotted">
+        <thead>
+            <tr>
+                <th class="header-style-dotted">Header 1</th>
+                <th class="header-style-dotted">Header 2</th>
+                <th class="header-style-dotted">Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img src="fortable1.jpg" alt="Image" class="rounded-image">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Dashed Border Table -->
+    <table class="custom-table dashed">
+        <thead>
+            <tr>
+                <th class="header-style-dashed">Header A</th>
+                <th class="header-style-dashed">Header B</th>
+                <th class="header-style-dashed">Header C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data X</td>
+                <td>Data Y</td>
+                <td>Data Z</td>
+            </tr>
+            <tr>
+                <td>Data P</td>
+                <td>Data Q</td>
+                <td>Data R</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img src="fortable2jpg" alt="Image" class="rounded-image">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Groove Border Table -->
+    <table class="custom-table groove">
+        <thead>
+            <tr>
+                <th class="header-style-groove">Header X</th>
+                <th class="header-style-groove">Header Y</th>
+                <th class="header-style-groove">Header Z</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data A</td>
+                <td>Data B</td>
+                <td>Data C</td>
+            </tr>
+            <tr>
+                <td>Data M</td>
+                <td>Data N</td>
+                <td>Data O</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img src="fortable3jpg" alt="Image" class="rounded-image">
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
