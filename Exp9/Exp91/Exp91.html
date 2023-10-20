@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Merge Arrays Without Duplicates</title>
+</head>
+<body>
+    <script>
+        const array1 = [1, 2, 3, 4, 5];
+        const array2 = [3, 4, 5, 6, 7];
+
+        const mergedArray = [...new Set([...array1, ...array2])];
+
+        document.write('<p>Merged array without duplicates: ' + mergedArray + '</p>');
+    </script>
+</body>
+</html>
