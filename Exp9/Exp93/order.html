@@ -1,0 +1,94 @@
+<!-- order.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+      #order-details {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+
+    h2{
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    button {
+      background-color: #d8e5fa;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="image 1.png" alt="Logo" class="logo">
+    <ul class="navlist">
+      <li class="navlista"><a href="main.html">Home</a></li>
+      <li class="navlista"><a href="book.html">Books</a></li>
+      <li class="navlista"><a href="main.html#contact">Contact</a></li>
+      <li class="login"><a href="login.html">Login</a></li>
+      <li class="login"><a href="register.html">Register</a></li>
+    </ul>
+  </header>
+
+  <section id="order-details">
+    <!-- Order form -->
+    <form id="order-form" action="process_order.php" method="post">
+      <h2>Delivery Information</h2>
+      <label for="delivery-address">Delivery Address:</label>
+      <textarea id="delivery-address" name="delivery-address" required></textarea>
+
+      <h2>Payment Method</h2>
+      <label>
+        <input type="radio" name="payment-method" value="cash-on-delivery" required>
+        Cash on Delivery
+      </label>
+      <label>
+        <input type="radio" name="payment-method" value="online-payment" required>
+        Online Payment
+      </label>
+
+      <button type="submit">Confirm Order</button>
+    </form>
+  </section>
+
+</body>
+
+</html>

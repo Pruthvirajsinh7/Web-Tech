@@ -1,0 +1,132 @@
+<!-- book.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Details - Library Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="image 1.png" alt="Logo" class="logo">
+    <ul class="navlist">
+      <li class="navlista"><a href="main.html">Home</a></li>
+      <li class="navlista"><a href="book.html">Books</a></li>
+      <li class="navlista"><a href="main.html#contact">Contact</a></li>
+      <li class="login"><a href="login.html">Login</a></li>
+      <li class="login"><a href="register.html">Register</a></li>
+    </ul>
+  </header>
+
+  <!-- Book Sections -->
+  <div class="clearfix">
+    <!-- First Book -->
+    <section class="book-details-section">
+      <h2>Game of thrones</h2>
+      <img src="gameofthrons.jpg" alt="Book Cover 1">
+      <p>Author: George R.R. Martin</p>
+      <p>Genre: Epic Fantasy</p>
+      <p>Published Year: 1996</p>
+      <p>Description: Epic fantasy of noble houses vying for power in Westeros, with political intrigue and a looming supernatural threat.</p>
+    </section>
+
+    <!-- Second Book -->
+    <section class="book-details-section">
+      <h2>Dune</h2>
+      <img src="dune.jpg" alt="Book Cover 2">
+      <p><strong>Author:</strong> Frank Herbert</p>
+      <p>Genre: Science Fiction</p>
+      <p>Published Year: 1995</p>
+      <p>Description: Classic sci-fi on the desert planet Arrakis, blending politics and ecology in the struggle for control of a valuable spice.</p>
+    </section>
+
+    <section class="book-details-section">
+      <h2>To Kill a Mockingbird</h2>
+      <img src="To Kill a Mockingbird.jpg" alt="Book Cover 2">
+      <p>Author: Harper Lee</p>
+      <p>Genre: Classic Fiction</p>
+      <p>Published Year: 1960</p>
+      <p>Description: A powerful exploration of racial injustice and moral growth in the American South during the 1930s.</p>
+    </section>
+    <!-- Third Book -->
+    <section class="book-details-section">
+      <h2>The Great Gatsby</h2>
+      <img src="The Great Gatsby.jpg" alt="Book Cover 3">
+      <p>Author: F. Scott Fitzgerald</p>
+      <p>Genre: Classic Literature</p>
+      <p>Published Year: 1925</p>
+      <p>Description: Set in the Roaring Twenties, this novel delves into the elusive American Dream and the excesses of the Jazz Age.</p>
+    </section>
+  </div>
+
+  <div class="clearfix">
+    <!-- Add three more book sections in a similar manner -->
+    <!-- Fourth Book -->
+    <section class="book-details-section">
+      <h2>Harry Potter and the Sorcerer's Stone</h2>
+      <img src="Harry Potter and the Sorcerer's Stone.jpg" alt="Book Cover 4">
+      <p>Author:  J.K. Rowling</p>
+      <p>Genre: Fantasy</p>
+      <p>Published Year: 1997</p>
+      <p>Description: The first book in the magical series follows the journey of a young wizard, Harry Potter, as he discovers his identity and battles dark forces.</p>
+    </section>
+
+    <!-- Fifth Book -->
+    <section class="book-details-section">
+      <h2>1984</h2>
+      <img src="1984.jpg" alt="Book Cover 5">
+      <p>Author: George Orwell</p>
+      <p>Genre: Dystopian Fiction</p>
+      <p>Published Year: 1949</p>
+      <p>Description: A chilling portrayal of a totalitarian future society, exploring themes of surveillance, government control, and individual freedom.</p>
+    </section>
+
+    <!-- Sixth Book -->
+    <section class="book-details-section">
+      <h2>The Catcher in the Rye</h2>
+      <img src="The Catcher in the Rye.jpg" alt="Book Cover 6">
+      <p>Author: J.D. Salinger</p>
+      <p>Genre: Coming-of-Age Fiction</p>
+      <p>Published Year: 1951</p>
+      <p>Description: Narrated by the teenage Holden Caulfield, this novel explores the challenges of adolescence and the search for authenticity.</p>
+    </section>
+
+  <section class="book-details-section">
+    <h2>The Hobbit</h2>
+    <img src="The Hobbit.jpg" alt="Book Cover 6">
+    <p>Author: J.R.R. Tolkien</p>
+    <p>Genre: Fantasy Adventure</p>
+    <p>Published Year: 1937</p>
+    <p>Description: Bilbo Baggins embarks on an epic journey with dwarves and a wizard to reclaim treasure guarded by the fearsome dragon Smaug.</p>
+  </section>
+  </div>
+  <!-- Add one more row with three book sections -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Check if the user is logged in by looking for a flag in sessionStorage
+      const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+
+      if (!isLoggedIn) {
+        // User is not logged in, redirect to the login page
+        window.location.href = ("login.html");
+      }
+
+      // Attach click event listeners to each book section
+      const bookSections = document.querySelectorAll(".book-details-section");
+      bookSections.forEach((section) => {
+        section.addEventListener("click", function () {
+          // Redirect to the order page when a book is clicked
+          window.location.href = ("order.html");
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
